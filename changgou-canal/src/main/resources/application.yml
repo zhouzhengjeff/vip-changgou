@@ -1,0 +1,26 @@
+server:
+  port: 8884
+
+spring:
+  application:
+    name: canal-service
+  rabbitmq:
+    host: 192.168.199.134
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+canal:
+  client:
+    instances:
+      example:
+        host: 192.168.199.134
+        port: 11111
+        batchSize: 1000
+
+
+
+
+
+

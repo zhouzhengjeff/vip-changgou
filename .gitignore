@@ -1,0 +1,13 @@
+# Project exclude paths
+/changgou-canal/target/
+/changgou-common/target/
+/changgou-gateway/target/
+/changgou-service/changgou-business-service/target/
+/changgou-service/changgou-file-service/target/
+/changgou-service/changgou-goods-service/target/
+/changgou-service/changgou-search-service/target/
+/changgou-service/changgou-system-service/target/
+/changgou-service-api/changgou-file-service-api/target/
+/changgou-service-api/changgou-goods-service-api/target/
+/changgou-service-api/changgou-search-service-api/target/
+/changgou-service-api/changgou-system-service-api/target/

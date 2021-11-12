@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.hnguigu.changgou.mapper.SpecMapper">
+
+    <select id="findSpecVOsByCategoryName" resultType="SpecVO">
+        SELECT ts.name,
+               ts.options
+        FROM tb_spec ts
+                 LEFT JOIN tb_category tc ON ts.template_id = tc.template_id
+        WHERE tc.name = #{name}
+    </select>
+</mapper>

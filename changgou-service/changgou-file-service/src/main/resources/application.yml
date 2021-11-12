@@ -1,0 +1,41 @@
+server:
+  port: 8882
+
+spring:
+  application:
+    name: file-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.199.134:3306/changgou_goods?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: root
+      initial-size: 100
+      max-active: 2000
+      min-idle: 10
+      max-wait: 20000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*Mapper.xml
+  configuration:
+    cache-enabled: true
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
+  type-aliases-package: com.hnguigu.changgou.entity,com.hnguigu.changgou.vo
+
+
+
+
+
+
+
+
+
+
+
+
+
